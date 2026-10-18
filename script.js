@@ -450,15 +450,7 @@ document.getElementById('bkList').onclick=e=>{const b=e.target.closest('.option'
  const it=items[i],t=srcText(it),k=it[3],s=document.getElementById('bs'+i);
  s.innerHTML=`<b>📖 من الدرس ${AR(lessonName(it[0]))}</b>${t.replace(k,'<mark>'+k+'</mark>')}`;s.classList.add('on');stat();
  if(dn===items.length){const p=Math.round(sc/dn*100);document.getElementById('bkSum').innerHTML=`<div class="bk-sum"><b>${AR(p)}٪</b>${AR(sc)} من ${AR(dn)} — ${p>=85?'ممتاز! أنت جاهز 🔥':p>=60?'جيد، راجع الدروس المعلّمة':'راجع الدروس ثم أعد المحاولة'}</div>`}};
-const m=document.querySelector('.side');m.insertAdjacentHTML('beforeend','<button class="navbtn" data-section="bank" onclick="showSection(\'bank\')"><span class="num">❖</span>بنك الأسئلة</button>');
-document.querySelector('main.content-card').insertAdjacentHTML('beforeend',`<section id="bank" class="section hide">
-<div class="section-head"><div><h2>بنك الأسئلة</h2><p>أسئلة مبنية حرفيًا على نصوص الدروس؛ بعد كل إجابة يظهر لك النص الذي جاء منه السؤال.</p></div><span class="pill" id="bkCount">٣٨ سؤالًا</span></div>
-<div class="bk-filters" id="bkF"></div>
-<div class="bk-bar"><span id="bkStat">اختر درسًا أو ابدأ بكل الأسئلة</span><span><button class="btn" onclick="bkGo(true)">🔀 خلط</button> <button class="btn primary" onclick="bkGo(false)">إعادة</button></span></div>
-<div id="bkList"></div><div id="bkSum"></div></section>
-`);
-document.getElementById('bkCount').textContent=AR(BK.length)+' سؤالًا';
-const hb=document.querySelector('.hero .actions');hb.insertAdjacentHTML('beforeend','<button class="btn" onclick="showSection(\'bank\')">❖ بنك الأسئلة</button>');
+
 const _o=showSection;showSection=function(id){_o(id);if(id==='bank'&&!items.length)bkGo(false)};
 })();
 
