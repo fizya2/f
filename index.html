@@ -6,6 +6,15 @@
 <meta name="theme-color" content="#080d18">
 <title>فيزياء ثاني ثانوي | الترم الأول — أحمد علي البخيت وأ. محمد عبدالعزيز القضيب</title>
 <link rel="stylesheet" href="style.css?v=cosmic-v6">
+<style>
+.school-card{max-width:560px;margin:14px auto 0;padding:18px 14px;text-align:center;border:1px solid rgba(241,211,155,.25);border-radius:22px;background:rgba(255,255,255,.04)}
+.school-name{margin:0 0 14px;color:#f1d39b;font-weight:800;font-size:15px}
+.staff{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.staff-item{padding:10px 6px;border-radius:14px;background:rgba(120,140,200,.08);border:1px solid rgba(120,140,200,.25)}
+.staff-item small{display:block;margin-bottom:4px;font-size:11px;color:#8f9bb8}
+.staff-item b{display:block;font-size:13px;font-weight:800;color:#f5f1e6;line-height:1.5}
+@media(max-width:380px){.staff{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div id="sp" role="status" aria-label="جاري تحميل منصة الفيزياء">
@@ -92,8 +101,17 @@
 </section>
 </main>
 </div>
-<div class="footer"><p style="margin:0 0 8px;color:#f1d39b;font-weight:800;font-size:14px">  جميع الحقوق محفوظة © أحمد علي البخيت وأ. محمد عبدالعزيز القضيب</p>منصة مراجعة تعليمية — للشرح والأمثلة والأنشطة</div> 
-<div class="footer"><p style="margin:0 0 8px;color:#f1d39b;font-weight:800;font-size:14px">  مدرسة ثانوية العيون - مسارات </p>  </div> 
+<div class="footer">
+  <p style="margin:0 0 8px;color:#f1d39b;font-weight:800;font-size:14px">جميع الحقوق محفوظة © المبرمج أحمد بن علي البخيت</p>
+  <div class="school-card">
+    <p class="school-name">مدرسة ثانوية العيون - مسارات</p>
+    <div class="staff">
+      <div class="staff-item"><small>مدير المدرسة</small><b>أ. عبدالواحد بن سعد الكليب</b></div>
+      <div class="staff-item"><small>وكيل المدرسة</small><b>أ. أحمد بن عبدالله الكليب</b></div>
+      <div class="staff-item"><small>معلم المادة</small><b>أ. محمد بن عبدالعزيز القضيب</b></div>
+    </div>
+  </div>
+</div>
 </div>
 <script>
 /* Self-contained loader animation; it also works if the main site script fails. */
